@@ -15,7 +15,6 @@ const volunteerSeed =[
       email: "amandalmorris31@gmail.com",
       picture: "",
       accept_evt:"",
-      decline_evt:"",
       admin: false
     }
 ];

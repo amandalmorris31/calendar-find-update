@@ -5,8 +5,9 @@ import ResponseBtns from "../ResponseBtns";
 import "./style.css";
 
 function EventData({ start, end, title, description, location, id }) {
-  function confirmEvent(){
-    console.log("confirming event");
+  function confirmEvent(id){
+    console.log("confirming event", id);
+    // axios.put("/")
     //post to server with event and user id. user id might be on server in cookie
   }
   return (
@@ -23,6 +24,7 @@ function EventData({ start, end, title, description, location, id }) {
       />
       <ResponseBtns
       //give ResponseBtns controller the following stuff.  Passing prop
+      eventId={id}
       doConfirm={confirmEvent}
       />
     </div>

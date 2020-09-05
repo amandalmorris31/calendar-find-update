@@ -25,6 +25,10 @@ const eventSchema = new mongoose.Schema({
   location: {
     type: String,
     default: ""
+  },
+
+  user_id: {
+    type: Number
   }
 
 });

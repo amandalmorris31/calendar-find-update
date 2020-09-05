@@ -2,12 +2,12 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const volunteerSchema = new mongoose.Schema({
-  given_name: {
+  first_name: {
     type: String,
     required: true
   },
   
-  family_name: {
+  last_name: {
     type: String,
     required: true
   },
@@ -25,6 +25,11 @@ const volunteerSchema = new mongoose.Schema({
   admin: {
     type: Number,
     default: 0
+  },
+
+  accept_evt: {
+    type:Schema.Types.ObjectId,
+    ref:"Event"
   }
 
 });
